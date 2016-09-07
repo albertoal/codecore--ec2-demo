@@ -25,14 +25,10 @@ sudo cp /home/ubuntu/ec2-demo-v1/index.html /var/www/codecore.io/
 
 sudo cp /home/ubuntu/ec2-demo-v1/codecore.io /etc/nginx/sites-available/codecore.io
 
-# Create Symlink on sites-available
+# Create Symlink on sites-enabled
 
 sudo ln -s /etc/nginx/sites-available/codecore.io /etc/nginx/sites-enabled/codecore.io
 
-# Start NginX service
+# restart NginX service
 
-sudo service nginx start
-
-
-
-
+sudo service nginx restart
